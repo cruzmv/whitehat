@@ -1,0 +1,10 @@
+<div class="row itemsBlock">
+  <div *ngFor="let game of games" class="col-md-2 col-sm-4 col-12 container">
+    <div class="ribbon" *ngIf="game.new || game.top" > <span>{{ game.new || game.top | uppercase}}</span>  </div>
+    <img class="img-fluid game_image" src="{{game.image}}"/>
+    <div class="overlay icon">
+        <img src="assets/play.png">
+      </div>
+    <div class="jackpot_tag" *ngIf="game.jackpot" >{{game.jackpot | currency:'GBP'}}</div>
+  </div>
+</div>

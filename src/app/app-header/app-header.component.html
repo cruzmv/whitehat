@@ -1,0 +1,7 @@
+<nav aria-labelledby="main-menu-label">
+  <ul role="menubar" *ngFor="let category of categories">
+    <li role="menuitem"  [class.active] = "category.active"  >
+      <a href="/{{category.link}}">{{category.description}}</a>
+    </li>
+  </ul>
+</nav>
