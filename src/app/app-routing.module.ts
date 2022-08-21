@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path:'', redirectTo: '/dashboard?game=top',  pathMatch: 'full' },
-  { path:'dashboard', component: DashboardComponent },
+  { path : '', redirectTo: '/dashboard?game=new',  pathMatch: 'full' },
+  { path : 'dashboard', component: DashboardComponent },
 ];
 
 @NgModule({
